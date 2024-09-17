@@ -1,0 +1,100 @@
+.certificates {
+    padding-bottom: 50px;
+}
+
+.certificates .image-container .certificate-img img {
+    width: 100%;
+    height: 11rem;
+    border-radius: 10px;
+}
+
+.certificate-img {
+    padding: 10px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 10px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    padding: 5px;
+}
+.certificate-img a{
+    color: var(--bg-black-100);
+}
+.certificate-img a:hover{
+    color: var(--h3-color);
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.certificates .image-container .certificate-img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+    overflow: hidden;
+}
+
+.certificate-img {
+    flex: 1 1 calc(25% - 10px); 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease; 
+}
+
+.certificate-img:hover {
+    transform: scale(1.05); 
+}
+
+.see-more {
+    display: block; 
+    margin: 20px auto;
+    padding: 10px 20px; 
+    background-color: var(--skin-color); 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.see-more:hover {
+    background-color: darken(var(--skin-color), 10%); 
+}
+
+
+@media (max-width:768px){
+    .certificates {
+        padding-bottom: 30px;
+    }
+    
+    .certificates .image-container .certificate-img img {
+        width: 100%;
+        height: 10rem;
+        border-radius: 10px;
+    }
+    
+    .image-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+        overflow: hidden;
+        grid-gap: 20px;
+    }
+    .certificate-img {
+        padding: 10px;
+        background-color: var(--white-alpha-25);
+        border: 1px solid var(--white-alpha-40);
+        border-radius: 10px;
+    }
+
+}

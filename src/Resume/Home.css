@@ -1,0 +1,149 @@
+:root {
+    --bg-black-100: #03101f;
+    --bg-black-900: #fff;
+    --bg-black-50: #3f5166;
+    --text-color-aside: #ffffff;
+    --text-bg-side:#aab0b3;
+    --text-black-900: black;
+    --white-alpha-40: rgba(0, 0, 0, 0.60); 
+    --white-alpha-25: rgba(0, 0, 0, 0.24);
+    --span-color: ;
+    --h3-color:#c41616;
+    --h4--color:rgb(7, 56, 56);
+    --skin-color:rgb(31, 31, 67);
+}
+
+/* ==============================================================
+                   Home Section Image 
+================================================================= */
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-black-900);
+}
+
+h3.hello,
+h3.my-profession {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-family: "Clicker Script", cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color:red;
+}
+
+.typing {
+    color: var(--bg-black-50);
+    font-size:1.6rem;
+}
+
+ p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.tick{
+    height: 1.2rem;
+    width: 1.2rem;
+    }
+.container p{
+    font-size: 1.2rem;
+}
+.research a, .role a{
+    font-size: 1.5rem;
+}
+
+.home-info {
+    max-width:100%; 
+    margin: 20px auto;
+    padding: 20px;
+    line-height: 1.6; /* Improves readability */
+  }
+  
+  .home-info h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .home-info .name {
+    color: #0073e6;
+  }
+  
+  .home-info .my-profession .typing {
+    color: #ff6600; /* Style the profession */
+    font-weight: bold;
+  }
+  
+  .home-info p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify; /* Ensures text flows around the image */
+  }
+  
+  .image-in-paragraph {
+    float: right; /* Allows the image to float on the left side */
+    margin-left: 20px; /* Adds space between the image and text */
+    margin-top: -2px; /* Adds space at the bottom of the image */
+    width: 10rem;
+    height: 10rem;
+    border-radius: 8px; /* Rounds the corners of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+ .lnn-image{
+    width: 100%;
+    height: 20rem;
+    transition: all 0.3s ease-in-out;
+ }
+ .lnn-image:hover{
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.60);
+    z-index: 2;
+ }
+
+@media (max-width:768px){
+    .home-info p {
+        font-size: 1.1rem;
+        margin-right: 0rem;
+        padding-right: 0rem;
+        color: #555;
+        text-align: justify; /* Ensures text flows around the image */
+      }
+      
+    .image-in-paragraph {
+        float: right; /* On smaller screens, the image won't float */
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 7rem;
+        height: 7rem;
+      }
+    
+      .home-info {
+        padding: 10px;
+      }
+   
+    h3.hello,
+    h3.my-profession {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    
+    h3.hello span {
+        font-size: 1rem;
+    }
+    
+    .typing {
+        color: var(--bg-black-50);
+        font-size:1rem;
+    }
+    
+    .home-info p {
+        margin-bottom:0px;
+        font-size:14px;
+    
+    }   
+}

@@ -1,0 +1,283 @@
+/* =====================================================================
+      ABOUT SECTION
+ =========================================================================== */
+
+.skills-container{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+
+.about .about-heading h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+}
+
+.about .about-heading h3 span {
+    color: var(--h3-color);
+}
+
+.about .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+
+}
+
+.about-text h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.about .skills-container h2 {
+    color: var(--skin-color);
+    font-size: 30px;
+}
+
+.about-text .skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.about .skills h3 {
+    font-size: 25px;
+}
+
+.about-text .skill-item {
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 5px 15px;
+    text-transform: capitalize;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+}
+
+.about-text {
+    width: 60%;
+    padding: 0 15px;
+}
+
+.about-nav {
+    margin-bottom: 23px;
+}
+
+.about-nav .nav-link {
+    width: 50%;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-nav .nav-link .nav-item {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.about-nav .nav-link .nav-item i {
+    color: var(--skin-color);
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
+/* about lib, tech, lang */
+
+.about-tabs .tab-item {
+    padding: 2px 0px;
+    background-color: transparent;
+    text-transform: capitalize;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    color: var(--text-black-900);
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.about-tabs .tab-item:last-child {
+    margin: 0;
+}
+
+.about-tabs .tab-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--skin-color);
+    transition: width 0.3s ease;
+}
+
+.about-tabs .tab-item:hover::before {
+    width: 100px;
+    cursor: pointer;
+}
+
+.about-tabs .tab-item.active {
+    color: var(--h3-color);
+    opacity: 1;
+    cursor: all;
+}
+
+.tab-content {
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease; /* Transition for opacity */
+    height:0; /* Set initial height to 0 */
+    overflow: hidden; /* Hide overflow */
+}
+
+.tab-content.active {
+    opacity: 1; /* Show when active */
+    height: auto; /* Allow content to take its natural height */
+}
+
+.skills-container .about-tabs button {
+    margin: 0 30px 30px 0;
+    padding: 6px;
+    font-size: 23px;
+    color: var(--bg-black-100);
+}
+
+.skills-container .about-tabs button i {
+    font-size: 22px;
+}
+
+.tech-stack img{
+    width: 2rem;
+    height: 2rem;
+}
+.tech-stack {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    margin-top: 20px; 
+}
+
+.tech-stack .item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 8px 12px; 
+    transition: transform 0.3s; 
+}
+
+.tech-stack .item:hover {
+    transform: scale(1.05); 
+}
+
+.tech-stack img {
+    width: 2rem; 
+    height: 2rem; 
+    margin-right: 8px; 
+}
+
+.tech-stack p {
+    font-size: 16px; 
+    color: var(--text-black-900); 
+}
+.skills-container .tab-content h2{
+    display: none;
+}
+
+
+
+
+@media (max-width:768px) {
+    .skills-container{
+        width: 100%;
+    }
+    
+.skills-container h2 {
+        color: var(--skin-color);
+        font-size: 30px;
+    }
+    
+ .skills {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+ .skills h3 {
+        font-size: 25px;
+    }
+    
+   .skill-item {
+        background-color: var(--white-alpha-25);
+        border: 1px solid var(--white-alpha-40);
+        padding: 5px 15px;
+        text-transform: capitalize;
+        margin: 0 10px 10px 0;
+        border-radius: 20px;
+    }
+
+  
+    /* about lib, tech, lang */
+    
+    .about-tabs .tab-item {
+        padding: 2px 0px;
+        background-color: transparent;
+        text-transform: capitalize;
+        border: none;
+        display: inline-block;
+        font-size: 20px;
+        color: var(--text-black-900);
+        cursor: pointer;
+        font-weight: 500;
+        margin-right: 30px;
+        position: relative;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+    }
+    .tab-content {
+        opacity: 0; /* Hidden by default */
+        transition: opacity 0.5s ease; /* Transition for opacity */
+        height:0; /* Set initial height to 0 */
+       overflow: visible;
+    }
+    
+    .tab-content.active {
+        opacity:1; /* Show when active */
+        height: auto; /* Allow content to take its natural height */
+    }
+    
+
+    .tech-stack img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .tech-stack {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        margin-top: 0px; 
+       
+    }
+    
+    .tech-stack .item {
+        display: flex;
+        flex-wrap: wrap;
+        height: 4rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 5px 5px; 
+        transition: transform 0.3s; 
+    }
+    
+
+
+}

@@ -1,0 +1,216 @@
+:root {
+    --bg-black-100: #03101f;
+    --bg-black-900: #fff;
+    --bg-black-50: #3f5166;
+    --text-color-aside: #ffffff;
+    --text-bg-side:#aab0b3;
+    --text-black-900: black;
+    --white-alpha-40: rgba(0, 0, 0, 0.60); 
+    --white-alpha-25: rgba(0, 0, 0, 0.24);
+    --span-color: ;
+    --h3-color:#c41616;
+    --h4--color:rgb(7, 56, 56);
+    --skin-color:rgb(31, 31, 67);
+}
+
+
+/* --------------------------------------
+ Global Settings 
+ ---------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    box-sizing: none;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    opacity: 0.9;
+}
+
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.12;
+}
+
+body.hide-scrolling {
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    color: var(--skin-color);
+}
+
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    font-size:1.7rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+/* ============================================================================
+            Common Styling 
+================================================================================= */
+ul {
+    list-style: none;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.shadow-dark {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.text-color {
+    font-size: 1.1rem;
+    color: #555;
+} 
+
+
+
+/* ================ Main Content ===================== */
+.section {
+    height:auto;
+    opacity: 1;
+    padding: 0 30px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section .container {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+.main-content{
+    margin-bottom: 2.5rem;
+}
+
+/* ----------------- 
+Buttons 
+----------------- */
+button {
+    font-family: inherit;
+    user-select: none;
+}
+.btn {
+    line-height: 1.0;
+    margin-left: 1.4rem;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+    color: #0073e6; 
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #c41616de;
+}
+
+
+@media (max-width:768px){
+
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+
+    .section {
+        min-height: 0vh;
+        opacity: 1;
+        padding: 0 20px;
+        display: block;
+        width: 100%;
+    }
+    
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .section .container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+}

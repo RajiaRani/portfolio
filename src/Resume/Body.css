@@ -1,0 +1,78 @@
+.body{
+    width: 100%;
+    background-image: url("../assets/Project/ai-background-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 20px;
+    background-attachment: fixed;
+}
+.main-body-container{
+    width: 65%;
+    margin: auto;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.60);
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+p,a,li{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.main-body-container .whatsapp-image {
+    background-color: none;
+}
+.main-body-container .whatsapp-image img,
+.main-body-container  .email-image img{
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 3rem;
+    bottom: 3rem;
+    border-radius: 50%;
+    box-shadow: 5px 6px 8px rgba(0,0,0,0.9);
+    animation: Shake 3s ease-in-out 1s infinite; 
+    z-index: 2;
+}
+.main-body-container  .email-image img{
+    bottom:6rem;
+}
+
+@keyframes Shake {
+    0% { transform: translateY(0); } /* Start at the original position */
+    25% { transform: translateY(-5px); } /* Move left */
+    50% { transform: translateY(5px); } /* Move right */
+    75% { transform: translateY(-5px); } /* Move left */
+    100% { transform: translateY(0); } /* Back to the original position */
+}
+
+@media (max-width:768px){
+    .body{
+        width: 100%;
+        background-image: url("../assets/Project/ai-background-image.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        padding: 20px;
+        background-attachment: fixed;
+    }
+    .main-body-container{
+        width: 90%;
+        margin:auto;
+    }
+    
+}
+
+

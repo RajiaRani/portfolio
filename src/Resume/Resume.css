@@ -1,0 +1,274 @@
+.moreContent {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    padding: 10px;
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.5s ease; /* Smooth transition for fading in/out */
+}
+
+.moreContent.visible {
+    display: block; /* Show the content */
+    opacity: 1; /* Fade in */
+}
+.resume .container h3 span {
+    color: var(--h3-color);
+}
+
+.resume .content {
+    width: 50%;
+    padding: 10px 30px;
+}
+
+.resume .content {
+    padding: 40px 0;
+
+}
+.resume .content h3{
+    color: var(--h3-color);
+}
+.resume .content h4{
+    color:var(--h4--color);
+    font-size: 18px;
+}
+
+.resume .timeline {
+    position: relative;
+    margin-top: 20px;
+}
+
+.resume .timeline::before {
+    content: '';
+    background-color: var(--skin-color);
+    height: 100%;
+    width: 1.5px;
+    top: 0;
+    left: 5px;
+    position: absolute;
+}
+
+.resume .timeline .timeline-item {
+    margin-bottom: 30px;
+    padding: 10px 0 0 40px;
+    position: relative;
+}
+
+.resume .timeline .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: var(--skin-color);
+    height: 11px;
+    width: 11px;
+    top: 16px;
+    border: 50%;
+    border-radius: 50%;
+}
+
+.resume .timeline .timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.resume .timeline .date {
+    display: block;
+    color: var(--text-black-900);
+    font-weight: 400;
+    margin: 5px 0  10px;
+    font-size: 16px;
+    color: 	#475cb8;
+}
+
+.resume .timeline .timeline-item h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+    color: var(--text-black-900);
+}
+
+.resume .timeline-item h4 span {
+    font-weight: 400;
+}
+
+.resume .timeline .timeline-logo {
+    display: flex;
+    margin: 0px 0px 20px 20px;
+
+}
+
+.timeline-logo .logo-info {
+    display: block;
+}
+
+.timeline-logo .logo {
+    display: block;
+    margin-right: 14px;
+}
+
+.timeline-logo .logo a img {
+    width: 54px;
+    height: auto;
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 50%;
+}
+.resume .timeline  a{
+    color: var(--h3-color);
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 100px;
+    text-align: center;
+    margin-left: -10px;
+}
+.resume .timeline a:hover{
+    color: var(--bg-black-100);
+   transform: scale(1.01);
+}
+
+/* Style for the 'See More' button */
+.seeMore {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--skin-color);
+}
+
+/* Style for the hidden content */
+.moreContent {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+}
+ li{
+    color:#555;
+}
+
+@media(max-width:768px){
+    .resume{
+        width: 100%;
+    }
+    .resume .content {
+        padding: 40px 0;
+        width: 100%;
+       display: flex;
+       flex-direction: column;
+    
+    }
+    .resume .content2{
+        display: flex;
+        flex-direction: column;
+    }
+    .resume .content h3{
+        color: var(--h3-color);
+    }
+    .resume .content h4{
+        color:var(--h4--color);
+        font-size: 18px;
+    }
+    
+    .resume .timeline {
+        position: relative;
+        margin-top: 20px;
+    
+    }
+    
+    .resume .timeline::before {
+        content: '';
+        background-color: var(--skin-color);
+        height: 100%;
+        width: 1.5px;
+        top: 0;
+        left: 5px;
+        position: absolute;
+    }
+    
+    .resume .timeline .timeline-item {
+        margin-bottom: 30px;
+        padding: 10px 0 0 40px;
+        position: relative;
+    }
+    
+    .resume .timeline .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        background-color: var(--skin-color);
+        height: 11px;
+        width: 11px;
+        top: 16px;
+        border: 50%;
+        border-radius: 50%;
+    }
+    
+    .resume .timeline .timeline-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .resume .timeline .date {
+        display: block;
+        color: var(--text-black-900);
+        font-weight: 400;
+        margin: 5px 0  10px;
+        font-size: 16px;
+        color: 	#475cb8;
+    }
+    
+    .resume .timeline .timeline-item h4 {
+        font-size: 18px;
+        text-transform: capitalize;
+        margin: 0 0 10px;
+        color: var(--text-black-900);
+    }
+    
+    .resume .timeline-item h4 span {
+        font-weight: 400;
+    }
+    
+    .resume .timeline .timeline-logo {
+        display: flex;
+        margin: 0px 0px 20px 20px;
+    
+    }
+    
+    .timeline-logo .logo-info {
+        display: block;
+    }
+    
+    .timeline-logo .logo {
+        display: block;
+        margin-right: 14px;
+    }
+    
+    .timeline-logo .logo a img {
+        width: 54px;
+        height: auto;
+        border: 1px solid var(--white-alpha-40);
+        border-radius: 50%;
+    }
+    .resume .timeline  a{
+        color: var(--h3-color);
+        font-weight: 500;
+        text-transform: capitalize;
+        width: 100px;
+        text-align: center;
+        margin-left: -10px;
+    }
+    .resume .timeline a:hover{
+        color: var(--bg-black-100);
+       transform: scale(1.01);
+    }
+    
+    /* Style for the 'See More' button */
+    .seeMore {
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--skin-color);
+    }
+    
+    /* Style for the hidden content */
+    .moreContent {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}

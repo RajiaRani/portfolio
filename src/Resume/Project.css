@@ -1,0 +1,206 @@
+.service .container {
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.service .service-item {
+    display: 0 0 33.33%;
+    width: 33.33%;
+    align-items: center;
+}
+
+.service .service-item .service-item-inner {
+    text-align: center;
+    transition: all 0.3s ease;
+    width:19rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.portfolio-item-thumbnail img{
+    height: 10rem;
+    width: 19rem;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.service .service-item .service-item-inner:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+
+.service .service-item .service-item-inner h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--h3-color);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.service .service-item .service-item-inner p {
+    font-size: 16px;
+    color: var(--text-color-aside);
+    line-height: 25px;
+}
+
+.portfolio-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.pp-inner {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%; /* Make it responsive */
+}
+
+.pp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pp-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Space below the close button */
+}
+
+.pp-thumbnail img {
+    width: 100%; 
+    height:20rem; 
+}
+
+.pp-body {
+    margin-top: 10px; /* Space above body content */
+}
+
+.pp-body ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+.pp-body li {
+    margin: 5px 0; /* Space between list items */
+    color: #000;
+}
+
+.view-project-btn {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding around button */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.view-project-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* =============== Portfolio Section ================== */
+.portfolio .portfolio-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-heading h2 {
+    color: var(--text-color-aside);
+    font-weight: 500;
+}
+
+.portfolio .portfolio-item-inner {
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img {
+    height: 400px;
+    width: 100%;
+    display: block;
+}
+
+
+@media (max-width:768px){
+    .service .container {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    
+    .service .service-item {
+        display: 0 0 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .service .service-item .service-item-inner {
+        transition: all 0.3s ease;
+        width:100%;
+    }
+    
+    .portfolio-item-thumbnail img{
+        height: 10rem;
+        width: 100%;
+    }
+   
+    
+    .portfolio-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Ensure it's above other content */
+    }
+    
+    .pp-inner {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%; /* Make it responsive */
+    }
+    
+    .pp-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pp-close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin-bottom: 10px; /* Space below the close button */
+    }
+    
+    .pp-thumbnail img {
+        width: 100%; 
+        height:20rem; 
+    }
+    
+
+}

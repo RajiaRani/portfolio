@@ -1,0 +1,97 @@
+/* General aside styles */
+.aside {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(3, 81, 106);
+  color: #fff;
+  padding: 0 10px;
+}
+
+#navbar {
+  width: 100%;
+}
+
+/* Hide nav items initially */
+.nav {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  transform: translateY(-100%); /* Start hidden above the viewport */
+  transition: transform 0.5s ease-in-out; 
+}
+
+.nav.open {
+  display: flex;
+  transform: translateY(0);
+}
+
+/* Individual link styles */
+.nav-link {
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: rgba(214, 244, 249, 0.3);
+  color: black;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgb(3, 81, 106); /* Same background color as the menu */
+      width: 100%;
+      height: 100vh; /* Full screen height */
+      padding-top: 60px; /* Padding to ensure it doesn't overlap with logo */
+      transition: all 0.3s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+       transform: translateY(-100%);
+  }
+
+  /* When menu is open */
+  .nav.open {
+      display: flex;
+  }
+
+  .nav-link {
+      padding: 20px;
+      font-size: 1.5rem;
+      text-align: left;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Bottom border for links */
+  }
+}
