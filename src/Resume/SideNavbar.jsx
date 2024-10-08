@@ -8,11 +8,12 @@ import { FaBriefcase } from "react-icons/fa";
 import { BsChatDotsFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillCloseSquare } from "react-icons/ai";
+import { Link } from "react-scroll";  // Import Link from react-scroll
 import "../App.css";
 import "./SideNavbar.css";
 
 export default function SideNavbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Manage state for the menu open/close
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Toggle menu visibility
   const toggleMenu = () => {
@@ -23,32 +24,46 @@ export default function SideNavbar() {
     <div className="aside">
       <div className="logo">
         <a>
-          <span>C</span>henchaiah <span>M</span>ekalathuru
+          <span>R</span>ajia <span>R</span>ani
         </a>
       </div>
 
       <nav id="navbar">
-        <ul className={`nav ${isMenuOpen ? "open" : ""}`}> {/* Add "open" class when menu is open */}
+        <ul className={`nav ${isMenuOpen ? "open" : ""}`}>
           <li className="nav-link">
-            <AiFillHome className="icon" /> Home
+            <Link to="home" smooth={true} duration={500}> {/* Scroll to home section */}
+              <AiFillHome className="icon" /> Home
+            </Link>
           </li>
           <li className="nav-link">
-            <FaUserTie className="icon" /> About
+            <Link to="about" smooth={true} duration={500}> {/* Scroll to about section */}
+              <FaUserTie className="icon" /> About
+            </Link>
           </li>
           <li className="nav-link">
-            <FaFileAlt className="icon" /> Resume
+            <Link to="resume" smooth={true} duration={500}> {/* Scroll to resume section */}
+              <FaFileAlt className="icon" /> Resume
+            </Link>
           </li>
           <li className="nav-link">
-            <FaTasks className="icon" /> Projects
+            <Link to="project" smooth={true} duration={500}> {/* Scroll to projects section */}
+              <FaTasks className="icon" /> Projects
+            </Link>
           </li>
           <li className="nav-link">
-            <PiCertificateFill className="icon" /> Certificates
+            <Link to="certificate" smooth={true} duration={500}> {/* Scroll to certificates section */}
+              <PiCertificateFill className="icon" /> Certificates
+            </Link>
           </li>
           <li className="nav-link">
-            <FaBriefcase className="icon" /> Experience
+            <Link to="experience" smooth={true} duration={500}> {/* Scroll to experience section */}
+              <FaBriefcase className="icon" /> Experience
+            </Link>
           </li>
           <li className="nav-link">
-            <BsChatDotsFill className="icon" /> Contact
+            <Link to="contact" smooth={true} duration={500}> {/* Scroll to contact section */}
+              <BsChatDotsFill className="icon" /> Contact
+            </Link>
           </li>
         </ul>
 

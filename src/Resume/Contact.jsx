@@ -43,7 +43,7 @@ export default function Contact() {
                                         <i className="fa fa-phone"></i>
                                     </div>
                                     <h4>Call Me On</h4>
-                                    <p>+1 60558-54711</p>
+                                    <p>+91 83607-19956</p>
                                 </div>
                                 {/* Contact Info item end */}
                                 {/* Contact Info item start */}
@@ -52,8 +52,7 @@ export default function Contact() {
                                         <i className="fa fa-map-marker-alt"></i>
                                     </div>
                                     <h4>Address:</h4>
-                                    <p>102, Apt1, Linden Avenue</p>
-                                    <p>SD, USA-57069</p>
+                                    <p>India</p>
                                 </div>
                                 {/* Contact Info item end */}
                                 {/* Contact Info item start */}
@@ -62,7 +61,7 @@ export default function Contact() {
                                         <i className="fa fa-envelope"></i>
                                     </div>
                                     <h4>Email:</h4>
-                                    <p><a href="mailto:mekalathuru.chenchaiah@gmail.com">mekalathuru.chenchaiah@gmail.com</a></p>
+                                    <p><a href="mailto:rajiarani.syal.@gmail.com">rajiarani.syal@gmail.com</a></p>
                                 </div>
                                 <div className="contact-info-item padd-15">
                                     <div className="icon">

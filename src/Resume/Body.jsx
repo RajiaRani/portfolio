@@ -20,12 +20,12 @@ export default function Body() {
 
     <div className="main-body-container">
       <div className="whatsapp-image">
-        <a href="https://wa.me/16055854711" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/8360719956" target="_blank" rel="noopener noreferrer">
           <img src={whatsapp} alt="WhatsApp" />
         </a>
       </div>
       <div className="email-image">
-        <a href="mailto:.Mekalathuru.Chenchaiah.@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:.rajiarani.syal.@gmail.com" target="_blank" rel="noopener noreferrer">
           <img src={email} alt="Email" />
         </a>
       </div>
@@ -39,7 +39,7 @@ export default function Body() {
         <Route path="/contact" element={<Contact />} />
       </Routes> */}
        <About />
-      <Home/>
+      {/* <Home/> */}
 
       <Resume />
       <Project />

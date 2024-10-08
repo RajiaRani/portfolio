@@ -19,7 +19,11 @@
     margin: auto;
 
 }
-
+.about-nav .nav-link .nav-item {
+    padding: 5px 10px;
+    font-size: 18px;
+    text-align: start;
+}
 .about .about-nav li {
     color: #000;
 }

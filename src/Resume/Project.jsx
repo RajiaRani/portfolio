@@ -4,56 +4,39 @@ import "../App.css";
 import { motion } from "framer-motion";
 import { RxCrossCircled } from "react-icons/rx";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import img from "../assets/Project/project.jpg";
+import img from "../assets/Project/wonderlust.png";
 
 export default function Project() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
     const projects = [
         {
-            title: "Bitcoin Predict - Time Series Forecasting, Python, TensorFlow",
-            description: "Built a comprehensive machine learning model that predicts Bitcoin prices using historical time series data.",
+            title: "Mini-Wonderlust ",
+            description: "In this project, I aimed to replicate the Airbnb website. After learning the necessary technologies, I applied them to implement my project.",
             details: [
-                "Built a comprehensive machine learning model that predicts Bitcoin prices using historical time series data.",
-                "Enhanced Forecast Accuracy: Accomplished a 20% improvement in prediction accuracy as measured by mean absolute percentage error (MAPE) by employing LSTM and 1D CNN models.",
-                "Improved Data Utilization: Achieved a 30% increase in the model’s ability to capture market trends.",
-                "Reduced Model Experimentation Time: Accomplished a 40% reduction in time spent on model trials.",
-                "Enhanced Market Insight: Provided valuable predictive insights into Bitcoin's future price movements."
+                "In this project, I aimed to replicate the Airbnb website. After learning the necessary technologies, I applied them to implement my project.",
+                "he main technologies used for this project include HTML, CSS, Bootstrap, JavaScript, Node.js, Express, and MongoDB for the database. I also utilized Middleware and Error-Handling concepts. For authentication, I implemented the Passport npm package. The project is deployed using Render, a free hosting platform."
             ],
-            created: "4 Dec 2022",
-            technologies: "Python, TensorFlow",
+            created: "25 June 2024",
+            technologies: "Full Stack using MERN",
             role: "Frontend",
-            link: "www.domain.com",
+            link: "https://miniwonderlust-project.onrender.com/listings",
             img: img // Project-specific image
         },
+     
         {
-            title: "Predictive Modeling & Algorithm Development - LSTM, RNN, ARIMA",
-            description: "Predicted stock price with 98% accuracy to enable the company to make informed investments!",
+            title: "My Portfolio",
+            description:"This is my personal portfolio project, entirely crafted by me.",
             details: [
-                "Developed and executed a machine learning project using Python.",
-                "Automated data extraction and preprocessed over 20,000 data points.",
-                "Applied exploratory data analysis to identify key trends.",
-                "Presented actionable insights to stakeholders."
+               "I built this portfolio using HTML, CSS, and JavaScript.",
+               "I incorporated React to make it dynamic and interactive.",   
+                "Responsive design is ensured with media queries, allowing it to adapt seamlessly across all devices. The project was built from the ground up, showcasing my skills and creativity."
             ],
-            created: "4 Dec 2022",
-            technologies: "Matplotlib, Scikit-learn",
+            created: "Jan 2024",
+            technologies: "HTML, CSS, JavaScript, React",
             role: "Frontend",
-            link: "www.domain.com",
-            img: img // Project-specific image
-        },
-        {
-            title: "Web Scraping, Data Visualization & Regression Modeling",
-            description: "Developed and executed a machine learning project to predict outcomes using Python.",
-            details: [
-                "Predicted stock price with 98% accuracy.",
-                "Determined optimal pricing strategies.",
-                "Made multiple touch-sensitive ML systems to improve safety networks."
-            ],
-            created: "4 Dec 2022",
-            technologies: "LSTM, RNN, ARIMA",
-            role: "Frontend",
-            link: "www.domain.com",
-            img: img // Project-specific image
+            link: "http://127.0.0.1:5173/portfolio/",
+            img: img,
         }
     ];
 

@@ -1,37 +1,43 @@
 import React, { useState } from "react";
 import "./Certificate.css";
 import { motion } from "framer-motion";
-import ai from "../assets/certificates/Ai.png";
-import dl from "../assets/certificates/DL.png";
-import ml from "../assets/certificates/ML.png";
-import ml2 from "../assets/certificates/ML2.png";
-import py from "../assets/certificates/python.png";
-import javaandroid from "../assets/certificates/javaforAndroid.png";
-import py2 from "../assets/certificates/python2.png";
-import learnjava from "../assets/certificates/learnJava.png";
-import dsa from "../assets/certificates/dsa.png";
-import git from "../assets/certificates/Git.png";
-import linux from "../assets/certificates/linux.png";
-import coding from "../assets/certificates/coding.png";
-import projectmanagement from "../assets/certificates/projectmangement.png";
+import html1 from "../assets/certificates/html1.png";
+import html2 from "../assets/certificates/html2.png";
+import react from "../assets/certificates/react.png";
+import buildInterface from "../assets/certificates/buildingInterface.png";
+import reactfullstack from "../assets/certificates/reactfullstack.png";
+import css from "../assets/certificates/css.png";
+import github from "../assets/certificates/github.png";
+import algo from "../assets/certificates/algo.png";
+import ai from "../assets/certificates/ai-part1.png";
+import toolkit from "../assets/certificates/algo-toolkit.png";
+import mathPrep from "../assets/certificates/mathPrep.png";
+import selection from "../assets/certificates/selection.png";
+import el from "../assets/certificates/el.png";
+import re from "../assets/certificates/rescsion.png";
+import ve from "../assets/certificates/vector.png";
+import handOn from "../assets/certificates/handOn.png";
 
 export default function Certificate() {
     const [showAll, setShowAll] = useState(false);
 
     const certificates = [
-        { src: ai, alt: "AI Applications with Python and Flask", link: "https://www.coursera.org/account/accomplishments/certificate/9UDX3YD94SU2" },
-        { src: dl, alt: "Unsupervised Learning, Recommenders, Reinforcement Learning", link: "https://www.coursera.org/account/accomplishments/certificate/A87XC363QS7U" },
-        { src: ml, alt: "Machine Learning Specialization", link: "https://www.coursera.org/account/accomplishments/specialization/certificate/86ZYQ7F5TTN3" },
-        { src: ml2, alt: "Supervised Machine Learning: Regression and Classification", link: "https://www.coursera.org/account/accomplishments/certificate/Q89RDQEHJJ3Z" },
-        { src: py, alt: "Crash Course on Python", link: "https://www.coursera.org/account/accomplishments/verify/5SFB8EW3ADMC" },
-        { src: javaandroid, alt: "Java for Android", link: "https://www.coursera.org/account/accomplishments/verify/3QQ5DPTPU8PW?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" },
-        { src: py2, alt: "Python for Data Science, AI & Development", link: "https://www.coursera.org/account/accomplishments/certificate/8GJVAS7UN97N" },
-        { src: learnjava, alt: "Learn Java", link: "https://www.codechef.com/certificates/public/f9ca576" },
-        { src: dsa, alt: "Data Structures", link: "https://www.coursera.org/account/accomplishments/certificate/58TU5BBSF2ZT" },
-        { src: git, alt: "Getting Started with Git and GitHub", link: "https://www.coursera.org/account/accomplishments/certificate/3ZVCCRS7HX3T" },
-        { src: linux, alt: "Linux Fundamentals", link: "https://www.coursera.org/account/accomplishments/verify/TED5CRLEVZHQ" },
-        { src: coding, alt: "Supervised Machine Learning: Regression and Classification", link: "https://www.coursera.org/account/accomplishments/certificate/Q89RDQEHJJ3Z" },
-        { src: projectmanagement, alt: "Foundations of Project Management", link: "https://www.coursera.org/account/accomplishments/verify/JJ5SK6838ZMK" }
+        { src: html1, alt: "Introduction to HTML5", link: "https://www.coursera.org/account/accomplishments/verify/WTYMZT8DKC9M?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course" },
+        { src: html2, alt: "Introduction to HTML", link: "https://www.coursera.org/account/accomplishments/verify/JFTVDAMY4P94?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project" },
+        { src: css, alt: "CSS Basics", link: "https://courses.edx.org/certificates/71ba7af918ff418a831600cbfab4bc85" },
+        { src: react, alt: "React Basics", link: "https://www.coursera.org/account/accomplishments/verify/P6E569X9FNAM?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" },
+        { src: buildInterface, alt: "React.js: Building an Interface", link: "https://www.linkedin.com/learning/certificates/0e89add5ba4781578b8650cca7e61062a6ec853a973d7d290f11b8fb4c455b4a" },
+        { src: reactfullstack, alt: "Preview React: Creating and Hosting a Full-Stack Site", link: "https://www.linkedin.com/learning/certificates/3d631a4d205e794ae56afb4558488157251da9085661903a5825f1de038624c6" },
+        { src: algo, alt: "Algorithms on Graphs", link: "https://www.coursera.org/account/accomplishments/verify/49GR62XB6MCE?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course" },
+        { src: github, alt: "Getting Started with Git and GitHub", link: "https://www.coursera.org/account/accomplishments/verify/7Q7MUK54BDE5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course" },
+        { src: ai, alt: "Math for AI beginner part 1 Linear Algebra", link: "https://www.coursera.org/account/accomplishments/verify/DEP2TLR8XW6Q?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course" },
+        { src: toolkit, alt: "Algorithmic Toolbox", link: "https://www.coursera.org/learn/algorithmic-toolbox/home/module/1?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta" },
+        { src: mathPrep, alt: "Math Prep: College & Work Ready", link: "https://www.coursera.org/learn/tsi-math-prep/home/module/1?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta" },
+        { src: handOn, alt: "Programming in C++: A Hands-on Introduction", link: "https://coursera.org/share/3003c2b873e41f04514530ed958dcc7c" },
+        { src: selection, alt: "C++ Basics: Selection and Iteration", link: "https://coursera.org/share/1a2de014aac9cc4ddcf954e944691cef" },
+        { src:ve , alt: "C++ Basic Structures: Vectors, Pointers, Strings, and Files", link: "https://coursera.org/share/c306f8233ad1a3ab6c9633d76aa444bc" },
+        { src:re , alt: "C++ Object Basics: Functions, Recursion, and Objects", link: "https://coursera.org/share/41eae9fdd32a0f1ba26fb752bc205000" },
+        { src: el, alt: "Object-Oriented C++: Inheritance and Encapsulation", link: "https://coursera.org/share/fabec83cb18d6b2d5f706e07e02ee995" }
     ];
 
     // Calculate which certificates to show based on state

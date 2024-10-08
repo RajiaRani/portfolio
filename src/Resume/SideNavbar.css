@@ -5,17 +5,23 @@
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(3, 81, 106);
+  justify-content: start;
+  background-color: rgba(3, 81, 106,1.0);
   color: #fff;
   padding: 0 10px;
 }
-
+.aside .logo{
+  width: auto;
+}
+ .aside .logo a,span{
+  font-size: 1.5rem;
+} 
 #navbar {
-  width: 100%;
+  width: 50%;
+  margin-left:1.7rem;
 }
 
-/* Hide nav items initially */
+/* Hide nav items initially on mobile */
 .nav {
   display: none;
   flex-direction: column;
@@ -52,7 +58,7 @@
 
 /* Hamburger menu styles */
 .hamburger-menu {
-  display: block;
+  display: none; /* Hidden on larger screens */
   position: absolute;
   top: 20px;
   right: 20px;
@@ -65,6 +71,10 @@
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Display hamburger menu on small screens */
+  }
+
   .nav {
       display: none;
       flex-direction: column;
@@ -79,7 +89,7 @@
       padding-top: 60px; /* Padding to ensure it doesn't overlap with logo */
       transition: all 0.3s ease-in-out;
       transition: transform 0.5s ease-in-out;
-       transform: translateY(-100%);
+      transform: translateY(-100%);
   }
 
   /* When menu is open */
@@ -93,5 +103,56 @@
       text-align: left;
       width: 100%;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Bottom border for links */
+  }
+
+  /* Hide social media links on mobile */
+  .aside-social-media {
+    display: none;
+  }
+}
+
+/* Media Queries for Tablets and Larger Screens */
+@media (min-width: 769px) {
+  /* Show nav in a row for larger screens */
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: none; /* Remove translateY animation */
+    padding-left: 0;
+    height: auto;
+    position: static; /* Keep the nav in its normal position */
+  }
+  #navbar{
+    width:50%;
+  }
+  /* Show links inline */
+  .nav-link {
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-bottom: none; /* Remove the bottom border */
+  }
+
+  /* Hide hamburger menu on larger screens */
+  .hamburger-menu {
+    display: none;
+  }
+
+  /* Show social media links on larger screens */
+  .aside-social-media {
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+  }
+
+  .aside-social-media .social-media-links a img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;
   }
 }

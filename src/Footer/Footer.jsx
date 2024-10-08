@@ -3,7 +3,7 @@ export default function Footer(){
 return(
     <>
     <div className="footer">
-    <p>&copy; Copy Rights by Chenchu</p>
+    <p>&copy; Copy Rights by Rajia Rani</p>
     </div>
     </>
 )
