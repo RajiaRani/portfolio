@@ -155,7 +155,12 @@ export default function Resume() {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="myresume.pdf" download="myresume.pdf" className="btn hire-me link-item">Download CV</a>
+                                <a
+                                        href={`Resume.pdf`}
+                                        download="Resume.pdf"
+                                        className="btn link-item">
+                                        Download CV
+                                    </a>
                             </div>
                         </section>
                     </div>

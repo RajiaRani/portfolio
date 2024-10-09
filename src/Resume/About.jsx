@@ -38,8 +38,8 @@ export default function About(){
                                     </Link>
                                     &nbsp;    &nbsp;
                                     <a
-                                        href={`/Resume.pdf`}
-                                        download="myresume.pdf"
+                                        href={`Resume.pdf`}
+                                        download="Resume.pdf"
                                         className="btn link-item">
                                         Download CV
                                     </a>
