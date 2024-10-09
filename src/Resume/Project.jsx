@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { RxCrossCircled } from "react-icons/rx";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import img from "../assets/Project/wonderlust.png";
+import project2 from "../assets/Project/portfolio.png";
 
 export default function Project() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -36,7 +37,7 @@ export default function Project() {
             technologies: "HTML, CSS, JavaScript, React",
             role: "Frontend",
             link: "http://127.0.0.1:5173/portfolio/",
-            img: img,
+            img: project2,
         }
     ];
 
@@ -59,7 +60,7 @@ export default function Project() {
          transition={{duration:0.5}}
 
          >
-            <div className="main-container">
+            <div className="main-container" style={{backgroundColor:"rgba(3, 81, 106,1.0)"}}>
                 <div className="main-content">
                     <section className="service section portfolio-section" id="project">
                         <div className="container">
@@ -68,7 +69,7 @@ export default function Project() {
                                     <h2>Recent Work</h2>
                                 </div>
                             </div>
-                            <div className="row">
+                            <div className="row project-container">
                                 {projects.map((project, index) => (
                                     <div className="service-item padd-15" key={index}>
                                         <div className="service-item-inner portfolio-item">

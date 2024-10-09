@@ -24,7 +24,7 @@ export default function SideNavbar() {
     <div className="aside">
       <div className="logo">
         <a>
-          <span>R</span>ajia <span>R</span>ani
+          <span className="name">R</span>ajia <span className="name">R</span>ani
         </a>
       </div>
 
